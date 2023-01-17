@@ -2,14 +2,14 @@
 
 fun main() {
     var numbers: MutableList<Int> = mutableListOf(3, 6, 4, 7, 42, 1, 26)
-    var newNumbers: MutableList<Int> = mutableListOf()
-    var newNumber: Int
-    for (number: Int in numbers){
-        newNumber = number + 5
-        newNumbers.add(newNumber)
+
+
+    println(numbers)
+    for (number: Int in 0..numbers.size-1){
+       numbers[number] += 5
     }
     println(numbers)
-    println(newNumbers)
+
 
 }
 
