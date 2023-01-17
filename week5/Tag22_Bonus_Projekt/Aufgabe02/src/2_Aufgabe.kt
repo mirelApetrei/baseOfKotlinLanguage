@@ -5,13 +5,19 @@ fun main(){
 
         // Hier drunter könnt ihr euren Code hinschreiben
     println(numberList.max())
-    var greatestNumber: Int = 0
-    for (number in numberList){
-        greatestNumber = numberList.max()
-        //println(greatestNumber)
+     var largestNumber = numberList[0]
+     var count = 0
+
+    for (num in numberList){
+        if (largestNumber < num){
+            largestNumber = num
+            count++
+        }
     }
 
 
 
+
+    println("The largest number is $largestNumber and is $count in our array.")
 
 }

@@ -10,7 +10,7 @@ fun main(){
         var newName = nameList[name]
         sortedList.add(newName)
         sortedList.remove("")
-        println(sortedList)
+//        println(sortedList)
     }
 
 
