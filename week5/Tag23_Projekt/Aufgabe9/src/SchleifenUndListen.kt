@@ -3,9 +3,9 @@ fun main() {
 
     val listSize = satz.size
     // TODO: a)
-    for (word in satz.reversed()) {
-       //  println(word)
-    }
+    for (i in satz.reversed())
+        println(i)
+
 
 //    TODO: b)
     var newList = satz.reversed()
