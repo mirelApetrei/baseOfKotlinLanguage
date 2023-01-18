@@ -1,6 +1,7 @@
 /*
 Schreibe hier deine Antwort hin.
-    TODO: durchläuft die Liste der Namen von Anfang bis Ende, und wenn es einen der 3 Namen findet, begrüßt es ihn auf eine andere Weise
+    TODO: durchläuft die Liste der Namen von Anfang bis Ende, und wenn es einen der 3 Namen findet,
+      begrüßt es ihn auf eine andere Weise
  */
 
 fun main() {

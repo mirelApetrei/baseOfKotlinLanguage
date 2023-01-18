@@ -1,6 +1,6 @@
 /*
 Schreibe hier deine Antwort hin.
-  TODO:  durchläuft die Liste der Früchte vom Ende bis zum Anfang (downTo), und wenn es eine Frucht=Bananen findet,
+  TODO:  durchläuft die Liste der Früchte vom index 3(ende) bis zum Anfang (downTo), und wenn es eine Frucht=Bananen findet,
     ändert es den Wert der Variablen lieblingsFrucht in "Bananen" und zeigt ihn dann in der Konsole an
  */
 

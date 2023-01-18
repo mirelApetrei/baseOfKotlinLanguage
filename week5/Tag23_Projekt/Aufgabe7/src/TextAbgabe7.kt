@@ -1,7 +1,7 @@
 /*
 Schreibe hier deine Antwort hin.
-    TODO: die Liste der Geschwindigkeitsbegrenzungen von Anfang bis Ende durchgehen, und wenn sie eine der 3 Geschwindigkeiten finden,
-      mit denen sie sie vergleichen, sie warnen, dass sie auf der Straße mit dem Index[i] nur mit der verglichenen Geschwindigkeit fahren dürfen
+    // TODO: die Liste der Geschwindigkeitsbegrenzungen von Anfang bis Ende durchgehen, und wenn sie eine der 3 Geschwindigkeiten finden,
+        mit denen sie sie vergleichen, sie warnen, dass sie auf der Straße mit dem Index[i] nur mit der verglichenen Geschwindigkeit fahren dürfen
  */
 
 fun main() {
