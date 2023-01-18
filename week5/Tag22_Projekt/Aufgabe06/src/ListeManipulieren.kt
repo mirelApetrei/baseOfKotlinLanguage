@@ -12,7 +12,3 @@ fun main() {
 
 
 }
-
-//var newNumber = number + 5
-//numbers.set(numbers[number], newNumber)
-//println(numbers)
