@@ -1,4 +1,0 @@
-/*
-Schreibe hier deine Antwort hin.
-
- */

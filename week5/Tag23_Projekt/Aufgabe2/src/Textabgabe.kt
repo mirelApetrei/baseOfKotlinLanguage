@@ -1,7 +1,7 @@
 /*
 Schreibe hier deine Antwort hin.
-     Mit der for-Schleife wird die Liste der Bücher durchlaufen, wobei i den Buchindex und var book den Namen des Buches beibehält.
-    dann wird angezeigt, wo sich jedes Buch befindet -> d.h. auf welchem Index jedes Buch zu finden ist
+     TODO: Mit der for-Schleife wird die Liste der Bücher durchlaufen, wobei i den Buchindex und var book den Namen des Buches beibehält.
+        dann wird angezeigt, wo sich jedes Buch befindet -> d.h. auf welchem Index jedes Buch zu finden ist
  */
 
 fun main() {
