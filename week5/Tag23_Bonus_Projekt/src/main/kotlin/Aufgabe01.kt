@@ -1,3 +1,4 @@
+
 //TODO: hier dein Code
 // 4 sehr billige, 3 billige, 2 normale, 2 teure und 1 sehr teures Gemälde
 
@@ -17,6 +18,8 @@ var museumPaintings: MutableMap<String, Double> = mutableMapOf(
         )
 
 var myThiefBag: MutableMap<String, Double> = mutableMapOf()
+
+
 fun main() {
 
 }
