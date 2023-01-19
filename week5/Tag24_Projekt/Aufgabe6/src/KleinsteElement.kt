@@ -4,4 +4,19 @@ fun main() {
         52315, 346, 3567, 346, 235, 26, 357, 486, 457, 246, 246, 3247,
         35, 247, 2437, 274, 374, 35, 634, 35, 37, 2436, 43
     )
+    findMinimum(numbers)
+
+}
+
+fun findMinimum(list: List<Int>){
+    val listSize = list.size
+    var minimum: Int = list[0]
+    for (i in 1 until listSize ){
+        if (list[i] < minimum){
+            minimum = list[i]
+        }
+    }
+    println(minimum)
+
+
 }
