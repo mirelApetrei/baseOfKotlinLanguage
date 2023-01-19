@@ -29,7 +29,7 @@ fun main() {
     println("\nAufgabe c): ")
     for ((key, value) in seasons){
         if (key == "Sommer"){
-            println(value)
+            println("Die Sommer monate sind: $value")
         }
     }
 
@@ -55,7 +55,7 @@ fun findSeason(map: Map<String, List<String>>, month: String): String? {
 
         for ((key, value) in map) {
             if (value.contains(month)) {
-                return key
+                return "Die monat $month is im $key Jahreszeit"
             }
         }
         return null
