@@ -9,11 +9,11 @@ fun main() {
 }
 
 fun findMinimum(list: List<Int>){
-    val listSize = list.size
     var minimum: Int = list[0]
-    for (i in 1 until listSize ){
-        if (list[i] < minimum){
-            minimum = list[i]
+
+    for (number in list ){
+        if (number < minimum){
+            minimum = number
         }
     }
     println(minimum)
