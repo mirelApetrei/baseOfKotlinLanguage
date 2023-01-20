@@ -24,7 +24,8 @@ fun main() {
     mischen(meinDeck)
     var karte = eineKarteZiehen(meinDeck)
     var beispielwert = kartenWert(karte)
-    println(beispielwert)
+    //println(beispielwert)
+    handOfCards(meinDeck, "Computer")
 
 
 }
@@ -57,6 +58,44 @@ fun kartenWert(karte: String): Int {
     }
 }
 
-fun playerHand(hand: MutableList<String>): Int{
-
+//TODO: Aufgabe 2
+fun gesamtePunktzahlVonHand(hand: MutableList<String>): Int {
+    var sum = 0
+    for (karte in hand){
+        sum += kartenWert(karte)
+    }
+    return sum
 }
+
+//TODO: Aufgabe 3
+fun handOfCards(deck: MutableList<String> = kartendeck.toMutableList() , player: String){
+        var playerHand: MutableList<String> = mutableListOf()
+        var computerHand: MutableList<String> = mutableListOf()
+    playerHand.add(eineKarteZiehen(deck))
+    playerHand.add(eineKarteZiehen(deck))
+    computerHand.add(eineKarteZiehen(deck))
+    computerHand.add(eineKarteZiehen(deck))
+    var length = computerHand.size
+
+        if (player == "Player"){
+            println("This is Player Hand:")
+            for (karte in playerHand){
+                println(karte)
+            }
+        } else if (player == "Computer"){
+            println("This is Computer Hand: ")
+            for (i in 0 until computerHand.size - 1){
+                if (kartenWert(computerHand[i]) > kartenWert(computerHand[i + 1])){
+                    println(computerHand[i])
+                } else
+                    println(computerHand[i + 1])
+            }
+        }
+}
+
+//TODO: Aufgabe 4
+fun loserHand(hand: MutableList<String>): Boolean{
+    return gesamtePunktzahlVonHand(hand) > 21
+}
+//TODO: Aufgabe 5
+
