@@ -9,9 +9,10 @@ val kartendeck: List<String> = listOf(
     "Karo Ass", "Karo Koenig", "Karo Dame", "Karo Bube", "Karo 10", "Karo 9",
     "Karo 8", "Karo 7", "Karo 6", "Karo 5", "Karo 4", "Karo 3", "Karo 2",
 )
+    var myHand = mutableListOf<String>()
+    var computerHand = mutableListOf<String>()
 
 fun main() {
-
     /* Die Variable meinDeck ist euer Deck mit dem ihr arbeiten könnt.
     Mit der Funktion mischen() könnt ihr das Deck mischen.
     Mit der Funktion eineKarteZiehen() könnt ihr aus eurem Deck die oberste Karte ziehen.
@@ -20,12 +21,12 @@ fun main() {
     Unter dem Kommentar siehst du wie du die Funktionen benutzen kannst.
      */
     var meinDeck = kartendeck.toMutableList()
-
+/*
     mischen(meinDeck)
     var karte = eineKarteZiehen(meinDeck)
     var beispielwert = kartenWert(karte)
-    //println(beispielwert)
-    handOfCards(meinDeck, "Computer")
+    //println(beispielwert)*/
+    showCards(meinDeck, "Computer")
 
 
 }
@@ -68,34 +69,62 @@ fun gesamtePunktzahlVonHand(hand: MutableList<String>): Int {
 }
 
 //TODO: Aufgabe 3
-fun handOfCards(deck: MutableList<String> = kartendeck.toMutableList() , player: String){
-        var playerHand: MutableList<String> = mutableListOf()
-        var computerHand: MutableList<String> = mutableListOf()
-    playerHand.add(eineKarteZiehen(deck))
-    playerHand.add(eineKarteZiehen(deck))
-    computerHand.add(eineKarteZiehen(deck))
-    computerHand.add(eineKarteZiehen(deck))
-    var length = computerHand.size
+fun showCards(deck: MutableList<String>, player: String): List<String> {
 
-        if (player == "Player"){
-            println("This is Player Hand:")
-            for (karte in playerHand){
-                println(karte)
-            }
-        } else if (player == "Computer"){
-            println("This is Computer Hand: ")
-            for (i in 0 until computerHand.size - 1){
-                if (kartenWert(computerHand[i]) > kartenWert(computerHand[i + 1])){
-                    println(computerHand[i])
-                } else
-                    println(computerHand[i + 1])
-            }
+    if (player == "Me") {
+        myHand.add(eineKarteZiehen(kartendeck.toMutableList()))
+        myHand.add(eineKarteZiehen(kartendeck.toMutableList()))
+        for (card in myHand){
+            return card.toString().toList()
         }
+    }
+    if
+
 }
+
 
 //TODO: Aufgabe 4
 fun loserHand(hand: MutableList<String>): Boolean{
     return gesamtePunktzahlVonHand(hand) > 21
 }
 //TODO: Aufgabe 5
+fun drawMoreCards(player: String){
+    println("How is your hand of cards, $player?\n"+
+    "Do you want to draw another card:\n" +
+            "1. Hit\n" +
+            "2. Stand")
+    var playerChoise = readln()
+    when(playerChoise){
+        "1" -> loserHand(handOfCards()
+    }
+}
 
+
+
+
+
+
+/*
+
+var playerHand: MutableList<String> = mutableListOf()
+var computerHand: MutableList<String> = mutableListOf()
+playerHand.add(eineKarteZiehen(deck))
+playerHand.add(eineKarteZiehen(deck))
+computerHand.add(eineKarteZiehen(deck))
+computerHand.add(eineKarteZiehen(deck))
+var length = computerHand.size
+
+if (player == "Player") {
+    println("This is Player Hand:")
+    for (karte in playerHand) {
+        return karte
+    }
+} else if (player == "Computer") {
+    println("This is Computer Hand: ")
+    for (i in 0 until computerHand.size - 1) {
+        if (kartenWert(computerHand[i]) > kartenWert(computerHand[i + 1])) {
+            println(computerHand[i])
+        } else
+            return computerHand[i + 1].toString()
+    }
+}*/
