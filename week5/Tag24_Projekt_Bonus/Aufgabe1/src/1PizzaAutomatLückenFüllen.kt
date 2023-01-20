@@ -6,7 +6,7 @@ fun main(){
 
     var zutatenListe: List<String> = listOf("Mehl", "Hefe", "Wasser", "Tomatensoße", "Käse")
     var a = 1
-    for (){
+    for (i in 0..zutatenListe.size){
         println("$a. Grundzutat: ${zutatenListe[i]}")
         a++
     }
