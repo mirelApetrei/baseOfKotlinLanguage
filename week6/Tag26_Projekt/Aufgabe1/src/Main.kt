@@ -30,5 +30,7 @@ fun main() {
 
     // Nachdem euer erstellter Bus einmal gehupt hat, soll über einen Funktionsaufruf die Durchsage getätigt werden.
     // Hier drunter könnten ihr weitercoden:
+    firstBus.durchsage()
+    println(secondBus.seats)
 
 }

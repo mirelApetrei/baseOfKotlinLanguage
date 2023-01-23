@@ -7,6 +7,7 @@ class Bus {
     // Unser Bus soll 500 PS haben.
     // Eine Eigenschaft ist eine Variable/Konstante innerhalb einer Klasse.
     var horsePower = 500
+    var seats = 42
 
     // Wir wollen, dass ein Bus hupen kann, also erstellen wir eine Methode mit dem Namen "honk".
     // Eine Methode ist eine Funktion, die in einer Klasse definiert ist.
@@ -14,7 +15,11 @@ class Bus {
         println("Huuuup, Huuuup")
     }
 
+
     // Wir wollen, dass ein Bus eine Durchsage "Bitte aussteigen" machen kann.
     // Erstelle eine Methode mit dem Namen "durchsage", die eine Durchsage in der Konsole ausgibt.
 
+    fun durchsage(){
+        println("Bitte ausstiegen.")
+    }
 }

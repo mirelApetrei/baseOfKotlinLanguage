@@ -1,3 +1,4 @@
+/*
 Person {
 
     val age = 18
@@ -6,4 +7,16 @@ Person {
 
 method speak() {
     println("Hallo!")
+}
+*/
+
+
+class Person {
+
+    var age = 18
+
+    fun speak() {
+        println("Hallo!")
+    }
+
 }
