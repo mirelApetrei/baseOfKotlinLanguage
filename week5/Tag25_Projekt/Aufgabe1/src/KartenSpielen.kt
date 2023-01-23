@@ -11,7 +11,7 @@ val kartendeck: List<String> = listOf(
 )
     var myHand = mutableListOf<String>()
     var computerHand = mutableListOf<String>()
-
+    var myMoney = 100
 fun main() {
     /* Die Variable meinDeck ist euer Deck mit dem ihr arbeiten könnt.
     Mit der Funktion mischen() könnt ihr das Deck mischen.
@@ -26,7 +26,7 @@ fun main() {
     var karte = eineKarteZiehen(meinDeck)
     var beispielwert = kartenWert(karte)
     //println(beispielwert)*/
-    showCards(meinDeck, "Computer")
+    //showCards(meinDeck, "Computer")
 
 
 }
@@ -69,62 +69,57 @@ fun gesamtePunktzahlVonHand(hand: MutableList<String>): Int {
 }
 
 //TODO: Aufgabe 3
-fun showCards(deck: MutableList<String>, player: String): List<String> {
-
-    if (player == "Me") {
+fun showCards(deck: MutableList<String>, player: String): MutableList<String>? {
+    var computerHandToShow: MutableList<String> = mutableListOf()
+    if (player == "PLayer") {
         myHand.add(eineKarteZiehen(kartendeck.toMutableList()))
         myHand.add(eineKarteZiehen(kartendeck.toMutableList()))
         for (card in myHand){
-            return card.toString().toList()
+            return myHand
         }
+    } else if (player == "Computer"){
+        computerHand.add(eineKarteZiehen(kartendeck.toMutableList()))
+        computerHand.add(eineKarteZiehen(kartendeck.toMutableList()))
+        for (card in computerHand) {
+            var first = computerHand[0]
+            var second = computerHand[1]
+           computerHandToShow.add(maxOf(first, second))
+            return computerHandToShow
+        }
+
     }
-    if
-
+    return null
 }
-
 
 //TODO: Aufgabe 4
 fun loserHand(hand: MutableList<String>): Boolean{
     return gesamtePunktzahlVonHand(hand) > 21
 }
+
 //TODO: Aufgabe 5
-fun drawMoreCards(player: String){
-    println("How is your hand of cards, $player?\n"+
+fun hitOrStand(playerHand: MutableList<String>){
+    println("How is your hand of cards player?\n"+
     "Do you want to draw another card:\n" +
             "1. Hit\n" +
             "2. Stand")
     var playerChoise = readln()
-    when(playerChoise){
-        "1" -> loserHand(handOfCards()
+    when (playerChoise){
+        "1" -> myHand.add(eineKarteZiehen(kartendeck.toMutableList()))
+        "2" ->
     }
+
 }
 
+//TODO: Aufgabe 6
+fun dealerDraws(dealresHand: MutableList<String> = computerHand){
+    //check if dealer hand has < 16 points -> if yes, then draw
+    // check if dealer hand hasn`t more than 21 points -> if yes, than has lost
+}
 
+//todo: Aufgabe 7
 
+fun compareHands(hand1: MutableList<String> = myHand, hand2: MutableList<String> = computerHand){
+    var totalPointsMe: Int
+    var totalPointsComputer: Int
+}
 
-
-
-/*
-
-var playerHand: MutableList<String> = mutableListOf()
-var computerHand: MutableList<String> = mutableListOf()
-playerHand.add(eineKarteZiehen(deck))
-playerHand.add(eineKarteZiehen(deck))
-computerHand.add(eineKarteZiehen(deck))
-computerHand.add(eineKarteZiehen(deck))
-var length = computerHand.size
-
-if (player == "Player") {
-    println("This is Player Hand:")
-    for (karte in playerHand) {
-        return karte
-    }
-} else if (player == "Computer") {
-    println("This is Computer Hand: ")
-    for (i in 0 until computerHand.size - 1) {
-        if (kartenWert(computerHand[i]) > kartenWert(computerHand[i + 1])) {
-            println(computerHand[i])
-        } else
-            return computerHand[i + 1].toString()
-    }
-}*/
