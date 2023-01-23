@@ -1,3 +1,4 @@
+
 class Bruch {
     //Die zwei Klassenvariablen nicht verändern
     var zaehler: Int = 1
@@ -13,6 +14,8 @@ class Bruch {
         this.nenner = n
     }
     fun einlesen(){
-        this.zaehler = readline().toInt()
+       try {
+
+       }
     }
 }
