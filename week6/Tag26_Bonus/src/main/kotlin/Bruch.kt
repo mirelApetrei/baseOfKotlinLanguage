@@ -6,7 +6,7 @@ class Bruch {
 
     //Hier drunter kannst du weitercoden:
     fun ausgeben(): String{
-        return("$zaehler\/$nenner")
+        return("$zaehler/$nenner")
     }
 
     fun setz(z: Int, n: Int){
@@ -15,7 +15,17 @@ class Bruch {
     }
     fun einlesen(){
        try {
-
+        setz(z = readln().toInt(), n = readln().toInt() )
+       } catch (e: Error){
+           println(e.message)
        }
+    }
+
+    fun wert(): Double {
+        return (zaehler/nenner).toDouble()
+    }
+
+    fun kehrwert(): Double{
+        return (nenner/zaehler).toDouble()
     }
 }
