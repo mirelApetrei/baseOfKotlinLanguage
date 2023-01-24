@@ -2,6 +2,7 @@
 Schreibe hier deine Antwort auf:
     wir erstellen eine Klasse mit dem Namen GameCharacter, die folgende Eigenschaften hat: name, hasWeapon und level
 
+    -> machen wir 2 instanzen mit 2 verschidene Caracteren
     ->  erste println() Funktion zeigt folgendes an: "Legolas ist level 20. Hat er eine Waffe? false
     ->  zweite println() Funktion zeigt folgendes an: "Frodo ist level 3. Hat er eine Waffe? true
 

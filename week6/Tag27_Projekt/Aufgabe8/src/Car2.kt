@@ -8,14 +8,20 @@ class Car2 {
         this.ps = ps
         this.color = color
         this.seats = seats
-
+        if (ps < 0  || seats < 0){
+            println("Error, you cannot negative values for $ps and $seats give.")
+            return
+        }
     }
     constructor(ps:Int ,color: String, seats: Int ,freeSeats: Int): this(ps, color, seats){
         this.freeSeats = this.seats
 
+
+        if (ps < 0  || seats < 0){
+            println("Error, you cannot negative values for $ps and $seats give.")
+            return
+        }
     }
-
-
 
     fun getIn(){
         if (this.freeSeats > 0){
@@ -26,7 +32,7 @@ class Car2 {
     }
 
     fun getOut(){
-        if (this.freeSeats <= this.seats){
+        if (this.freeSeats < this.seats){
             freeSeats++
         } else {
             println("All seats are empty! You don`t have someone to kick off.")
