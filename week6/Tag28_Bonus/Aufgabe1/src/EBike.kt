@@ -1,0 +1,6 @@
+class EBike {
+}
+
+fun main () {
+
+}

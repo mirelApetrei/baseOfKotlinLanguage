@@ -1,9 +1,9 @@
 
 
 //      TODO: Was gibt das Programm aus?
-/*Dein Haustier hat sich streicheln lassen.
-Dein Haustier heisst Kruemel und ist 3 Jahre alt.
-false*/
+// Dein Haustier hat sich streicheln lassen.
+// Dein Haustier heisst Kruemel und ist 3 Jahre alt.
+// false
 //      TODO: Wir instanziieren eine Meerschweinchen-Instanz. In der Meerschweinchen-Klasse ist keine Methode pet(),
 // dennoch können wir die Meerschweinchen-Instanz mit pet() streicheln. Warum?
 // ==> weil class Meerschweinchen  erbt die Eigenschaften und Methoden von class Haustier

@@ -1,20 +1,18 @@
 
-class Book(): Page(text = ""){
-     lateinit var page: Page
-     lateinit var pages: List<Page>
-    constructor(page: Page, pages: List<Page>) : this() {
-        this.page = page
-        this.pages = pages
-    }
+class Book(var pages: List<Page>): Page(text = " "){
 
 
-    fun nextPage(){
-        this.page = pages[0]
-        for (page in pages){
+    var page: Page = pages[0]
 
 
+
+    fun nextPage() {
+        var pageNr = pages.listIterator()
+        if (pageNr.hasNext()){
+            this.page = pageNr.next()
+        } else {
+            println("There are no more pages.you finished the book.")
         }
-
     }
 
     fun previosPage(){
