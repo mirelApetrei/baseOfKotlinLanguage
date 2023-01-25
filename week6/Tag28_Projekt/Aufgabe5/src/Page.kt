@@ -1,5 +1,10 @@
 
-open class Page(var text: String) {
+open class Page {
+   open var text: String
+    constructor(text: String){
+        this.text = text
+    }
+
 
     fun read(){
         println(text)

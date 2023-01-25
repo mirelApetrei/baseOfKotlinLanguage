@@ -9,13 +9,14 @@ fun main(){
 
     var listOfPages: List<Page> = listOf(page1, page2, page3, page4)
 
-    var book: Book = Book(page1, listOfPages )
+    var book: Book = Book( listOfPages )
     book.read()
     book.nextPage()
+    book.read()
     book.nextPage()
-    book.nextPage()
-    book.nextPage()
+    book.read()
     book.previosPage()
+    book.read()
     book.previosPage()
-    book.previosPage()
+    book.read()
 }
