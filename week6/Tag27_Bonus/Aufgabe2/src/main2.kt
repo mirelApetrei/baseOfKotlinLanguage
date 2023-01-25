@@ -5,7 +5,11 @@ fun main() {
     var person3: Person = Person("Anne", 12, 155)
 
     //Hier drunter kannst du die listeAnPersonen anlegen
+    var personsList = listOf<Person>(person1, person2, person3)
 
+    for (person in personsList){
+        println(person.mayRide(person))
+    }
 
 }
 //hier drunter kannst du deine darfMitFahren-Funktion hinschreiben:
