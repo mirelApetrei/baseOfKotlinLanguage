@@ -1,7 +1,8 @@
-class Katze(name: String, coatColor: String ) {
+class Katze(var name: String, var coatColor: String) {
 
     fun miauen(){
         println("Miauuuuu, miauuu, miauuu!")
+
     }
 }
 

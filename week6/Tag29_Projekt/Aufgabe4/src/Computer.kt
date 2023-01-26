@@ -1,7 +1,7 @@
 class Computer(var on: Boolean) {
 
     fun pressOnButton() {
-        if (this.on == false){
+        if (!this.on){
             this.on = true
         }
     }
