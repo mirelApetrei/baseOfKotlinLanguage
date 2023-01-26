@@ -1,9 +1,9 @@
-import Aufgabe5.src.Hund
+import Aufgabe5.src.Hund2
 import Aufgabe5.src.Katze
 
 fun main(){
 
-    var dog:Hund = Hund()
+    var dog:Hund2 = Hund2()
     var cat:Katze = Katze()
 //    TODO: a) Instanziiere einen Hund und eine Katze, lass sie Geräusche machen.
     dog.makeNoise()     // --> "Woof!"
