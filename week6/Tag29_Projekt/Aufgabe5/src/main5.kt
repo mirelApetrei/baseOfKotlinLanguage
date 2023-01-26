@@ -12,7 +12,7 @@ fun main(){
 //    TODO: b) Füge diese Zeile Code in die makeNoise()-Methode der Hund und der Katzen-Klasse hinzu: super.makeNoise()
     /*Animal noises...
     Woof!
-    Animal noises...   ==> in die konsole wird geprinted
+    Animal noises...   ==> ueber konsole wird printed
     Miau.*/
 
 }
