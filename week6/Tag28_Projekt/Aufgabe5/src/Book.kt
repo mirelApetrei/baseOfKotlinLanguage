@@ -1,15 +1,19 @@
 
-class Book(var pages: List<Page>): Page(text = " "){
+class Book(pages: List<Page>, currentPage: Page) {
+
+    var pages: List<Page> = pages
+    var currentPage: Page
 
 
-    var page: Page = pages[0]
-
+    init {
+        this.currentPage = pages[0]
+    }
 
 
     fun nextPage() {
         var pageNr = pages.listIterator()
         if (pageNr.hasNext()){
-            this.page = pageNr.next()
+            this.currentPage = pageNr.next()
         } else {
             println("There are no more pages.you finished the book.")
         }
@@ -19,7 +23,7 @@ class Book(var pages: List<Page>): Page(text = " "){
 
         var pageNr = pages.listIterator()
         if (pageNr.hasPrevious()){
-            this.page = pageNr.previous()
+            this.currentPage = pageNr.previous()
         } else {
             println("There are no more pages previosly, you are at the first page")
         }

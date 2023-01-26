@@ -7,6 +7,6 @@ open class Page {
 
 
     fun read(){
-        println(text)
+        println(this.text)
     }
 }
