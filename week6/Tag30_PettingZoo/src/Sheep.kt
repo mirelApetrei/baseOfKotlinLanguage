@@ -5,6 +5,6 @@ open class Sheep(name: String,
 
     override fun makeSound() {
         super.makeSound()
-        println("meow, maked by the sheep")
+        println("määäähhh.., maked by the sheep")
     }
 }

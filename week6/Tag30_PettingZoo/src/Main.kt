@@ -52,6 +52,8 @@ fun main() {
     var thirdVisitor: Visitors = Visitors("Markus", 16)
     var fourthVisitor: Visitors = Visitors("Lea", 24)
 
-    var secondSheep: Sheep = Sheep("Bohnti", 27.5, 4,"Male" )
-    var secondChicken: Chicken = Chicken("Doodle", 3.5, 3, "Male", 0)
+
+
+    println()
+    println()
 }
