@@ -1,4 +1,4 @@
-open class Cow(
+class Cow(
     name: String,
     weight: Double,
     age: Int,
@@ -7,10 +7,10 @@ open class Cow(
 
     var givesmilk: Boolean = false
 
+
    init {
-       if (this.age >= 3){
-           this.givesmilk = true
-       }
+       this.givesmilk = this.age >= 3 && gender == "Female"
+
    }
 
 

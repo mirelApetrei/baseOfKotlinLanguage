@@ -1,4 +1,4 @@
-open class Chicken(name: String,
+class Chicken(name: String,
                    weight: Double,
                    age: Int,
                    gender: String,

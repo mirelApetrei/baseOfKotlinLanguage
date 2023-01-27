@@ -1,4 +1,4 @@
-open class Pony(
+class Pony(
     name: String,
     weight: Double,
     age: Int,

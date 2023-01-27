@@ -1,27 +1,32 @@
-open class PettingZoo() {
-    var animalsInZoo: MutableList<Animal> = mutableListOf()
+class PettingZoo(var pettListe: MutableList<Animal>) {
 
-    var firstSheep: Sheep = Sheep("Shawn", 23.4, 5, "Female")
-    var secondSheep: Sheep = Sheep("Bohnti", 27.5, 4,"Male" )
-    var firstChicken: Chicken = Chicken("Kikeri", 2.5, 2, "Female", 2)
-    var secondChicken: Chicken = Chicken("Doodle", 3.5, 3, "Male", 0)
-    var cow: Cow = Cow("Berta", 525.0, 7, "Female")
-    var pony: Pony = Pony("Gustav", 315.0, 3, "Male", 30.5)
-    constructor(animalsInZoo: MutableList<Animal>): this(){
-        this.animalsInZoo = animalsInZoo
-       animalsInZoo.add(0, firstSheep)
-       animalsInZoo.add(1, secondSheep)
-       animalsInZoo.add(2, firstChicken)
-       animalsInZoo.add(3, secondChicken)
-       animalsInZoo.add(4, cow)
-       animalsInZoo.add(5, pony)
-
+    fun allPettsSounds() {
+        for (i in this.pettListe) {
+            i.makeSound()
+        }
     }
 
+    fun feedAllPetts(visitor: Visitors) {
+        for (pett in pettListe) {
+            pett.canBeFed(visitor)
+        }
+    }
 
+    fun ponyRace(firstPony: Pony, secondPony: Pony) {
+
+        println("""
+            Welkome to the pony race!
+            
+            The first poney`s name is ${firstPony.name}, and he will compete with second poney, with the name ${secondPony.name}.
+                 
+        """.trimIndent())
+
+        if (firstPony.speed > secondPony.speed){
+            println("The ${firstPony.name} won , with a speed of ${firstPony.speed}, against ${secondPony.name} wich had a spped egual with ${secondPony.speed}")
+        } else {
+            println("The ${secondPony.name} won , with a speed of ${secondPony.speed}, against ${firstPony.name} wich had a spped egual with ${firstPony.speed}")
+        }
+    }
 
 }
 
-var secondVisitor: Visitors = Visitors("Sisi", 4)
-var thirdVisitor: Visitors = Visitors("Markus", 16)
-var fourthVisitor: Visitors = Visitors("Lea", 24)

@@ -10,10 +10,10 @@ open class Visitors {
     }
 
     override fun toString(): String {
-        return name
+        return "$name -> $age"
     }
     fun sayHello() {
-        println("Hello there, my name is ${this.name}, and I am ${this.age} old.")
+        println("Hello there, my name is ${this.name}, and I am ${this.age} years old.")
     }
 
 }

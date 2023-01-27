@@ -1,4 +1,4 @@
-open class Sheep(name: String,
+class Sheep(name: String,
                  weight: Double,
                  age: Int,
                  gender: String) : Animal(name, weight, age, gender ) {
