@@ -1,4 +1,4 @@
-class Cow(
+open class Cow(
     name: String,
     weight: Double,
     age: Int,
@@ -16,7 +16,7 @@ class Cow(
 
     override fun makeSound() {
         super.makeSound()
-        println("Moooooooo!")
+        println("Muuuuuuu!")
     }
 
     fun milking(visitor: Visitors){

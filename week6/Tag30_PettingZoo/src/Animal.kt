@@ -5,14 +5,17 @@ fed = gefüttert
 */
 
 
-open class Animal(var name: String, var weight: Double, var age: Int, var gender: String) {
+open class Animal(var name: String,
+                  var weight: Double,
+                  var age: Int,
+                  var gender: String) {
 
     fun move(){
         println("This animal has moved.")
     }
 
     open fun makeSound(){
-        println("This animal has made a noise....")
+        println("This animal has made a noise: ...?")
     }
 
     fun isStroked(visitor: Visitors){

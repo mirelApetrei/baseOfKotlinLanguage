@@ -1,13 +1,14 @@
-fun main(){
+fun main() {
 
 //    TODO: Task 2
-    var visitor: Visitors = Visitors("Franz", 35)
-    visitor.sayHello()
-    println(visitor.name)
+    var firstVisitor: Visitors = Visitors("Franz", 35)
+    firstVisitor.sayHello()
+    println(firstVisitor.name)
+
     println()
 //    TODO: Task 3
 
-    var pet: Animal = Animal("Helga", 35.3, 12, "Female",)
+    var pet: Animal = Animal("Helga", 35.3, 12, "Female")
     println(pet.name)
     println(pet.gender)
     println(pet.weight)
@@ -16,9 +17,9 @@ fun main(){
 //    TODO: Task 4
     println("Task 4")
     pet.move()
-    pet.isStroked(visitor)
+    pet.isStroked(firstVisitor)
     pet.makeSound()
-    pet.canBeFed(visitor)
+    pet.canBeFed(firstVisitor)
 //   TODO: task 5
     println()
     println("task 5 -> sheep")
@@ -36,8 +37,21 @@ fun main(){
 //    TODO: task 7
     println()
     println("Task 7 -> Cow")
-    var cow: Cow = Cow("Berta",525.0, 7, "Female")
-    cow.milking(visitor)
+    var cow: Cow = Cow("Berta", 525.0, 7, "Female")
+    cow.milking(firstVisitor)
 
+//    TODO: Task 8
+    println()
+    println("Task 8 -> Pony")
+    var pony: Pony = Pony("Gustav", 315.0, 3, "Male", 30.5)
+    var secondVisitor: Visitors = Visitors("Sisi", 4)
+    pony.canRide(firstVisitor)
+    pony.canRide(secondVisitor)
 
+//    TODO: Aufgabe 9
+    var thirdVisitor: Visitors = Visitors("Markus", 16)
+    var fourthVisitor: Visitors = Visitors("Lea", 24)
+
+    var secondSheep: Sheep = Sheep("Bohnti", 27.5, 4,"Male" )
+    var secondChicken: Chicken = Chicken("Doodle", 3.5, 3, "Male", 0)
 }
