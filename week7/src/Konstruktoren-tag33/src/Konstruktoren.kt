@@ -12,25 +12,14 @@ Erstelle dann zwei Hunde:
 *   Einen Neugeborenen (sekundärer Konstruktor).
 */
 
-fun main(){
-    var dog1 = Hund(3, "Male", "Rinty")
-    var dog2 = Hund()
-    println(dog2)
-}
-class Hund {
-    var alter: Int? = null
-    var geschlecht: String? = null
-    var name: String? = null
+fun main() {
+//    var dog1 = Hund(3, "Male", "Rinty")
+//    var dog2 = Hund()
+//    println(dog2)
 
-    constructor(alter: Int, geschlecht: String, name: String){
-        this.alter = alter
-        this.geschlecht = geschlecht
-        this.name = name
-    }
-    constructor(alter: Int = 0, name: String = readln()){
-        this.geschlecht = listOf<String>("Male", "Female").random()
-    }
+
 }
+
 
 
 /*
@@ -51,6 +40,9 @@ Dabei soll eine Warnung ausgegeben werden, wenn man versucht das Dach zu schlie�
 bzw. zu öffnen, wenn es bereits offen ist.
 Außerdem ist ein Cabriolet immer vom Typ Pkw.
 */
+
+
+
 
 /*
 TODO: Schreibe eine Klasse Person sowie die Unterklassen Lehrer.
